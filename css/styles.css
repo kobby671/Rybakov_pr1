@@ -148,3 +148,10 @@ button:focus-visible {
     outline: 3px solid #4f83ff;
     outline-offset: 2px;
 }
+
+.site-logo {
+    display: block;
+    width: 70px;
+    height: auto;
+    margin: 0 auto 15px;
+}
