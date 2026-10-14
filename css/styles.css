@@ -155,3 +155,15 @@ button:focus-visible {
     height: auto;
     margin: 0 auto 15px;
 }
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
