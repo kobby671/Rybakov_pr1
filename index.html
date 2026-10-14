@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа №1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+    <h1>Технологии разработки ПО</h1>
+
+    <nav aria-label="Основная навигация">
+        <a href="#about">О курсе</a>
+        <a href="#tracks">Направления</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#signup">Регистрация</a>
+    </nav>
+</header>
+    
+<main>
+    <section id="about">
+        <h2>О курсе</h2>
+        <p>
+            Изучение HTML, CSS и инструментов
+            разработки программного обеспечения.
+        </p>
+        <img src="dataset/assets/cover.svg"
+             alt="Иллюстрация учебного курса"
+             class="cover">
+    </section>
+
+    <section id="tracks">
+        <h2>Направления обучения</h2>
+
+        <div class="cards">
+            <article class="card">
+                <h3>HTML</h3>
+                <p>Структура и семантика документа</p>
+                <p>Оценка: 8</p>
+            </article>
+
+            <article class="card">
+                <h3>CSS</h3>
+                <p>Стили и адаптивность</p>
+                <p>Оценка: 9</p>
+            </article>
+
+            <article class="card">
+                <h3>Git</h3>
+                <p>История изменений</p>
+                <p>Оценка: 7</p>
+            </article>
+
+            <article class="card">
+                <h3>Forms</h3>
+                <p>Работа с HTML-формами</p>
+                <p>Оценка: 6</p>
+            </article>
+
+            <article class="card">
+                <h3>Accessibility</h3>
+                <p>Доступность интерфейсов</p>
+                <p>Оценка: 10</p>
+            </article>
+
+            <article class="card">
+                <h3>DevTools</h3>
+                <p>Проверка и отладка страниц</p>
+                <p>Оценка: 8</p>
+            </article>
+        </div>
+    </section>
+    
+<section id="schedule">
+    <h2>Расписание и направления</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Направление</th>
+                <th>Категория</th>
+                <th>Оценка</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Основа</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Оформление</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Git</td>
+                <td>Инструменты</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Forms</td>
+                <td>HTML</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Accessibility</td>
+                <td>Качество</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>DevTools</td>
+                <td>Проверка</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="signup">
+    <h2>Регистрация</h2>
+
+    <form action="#signup" method="get">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name"
+               minlength="2" required>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email"
+               required>
+
+        <label for="age">Возраст:</label>
+        <input type="number" id="age" name="age"
+               min="14" max="100" required>
+
+        <label for="course">Направление:</label>
+        <select id="course" name="course" required>
+            <option value="">Выберите направление</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="git">Git</option>
+        </select>
+
+        <label for="message">Комментарий:</label>
+        <textarea id="message" name="message"
+                  maxlength="300" rows="4"></textarea>
+
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+
+</main>
+
+    <footer>
+        <p>Практическая работа №1</p>
+    </footer>
+
+</body>
+</html>
